@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/loyalty
+    username: loyalty
+    password: loyalty
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+kafka:
+  consumer:
+    group-id: loyalty-service
+    bootstrap-servers: localhost:9092
