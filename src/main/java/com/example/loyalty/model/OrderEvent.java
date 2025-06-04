@@ -17,6 +17,11 @@ public class OrderEvent {
     private String customerId;
     private Instant timestamp;
 
+    // Add this constructor at the beginning of the OrderEvent class
+public OrderEvent() {
+    // Default constructor required for Jackson deserialization
+}
+
     public EventType getEventType() {
         return eventType;
     }
